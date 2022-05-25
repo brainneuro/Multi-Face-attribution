@@ -16,7 +16,6 @@ import pandas as pd
 import os
 from keras.models import model_from_json
 
-# 新加一个用于画出图 用tensorboard来画
 keras.callbacks.TensorBoard(log_dir='./results/graph',
                             histogram_freq=0,
                             write_graph=True,
