@@ -1,1 +1,11 @@
-# Multi-Face-attribution
+
+There are two branches in this repository, one named "main" and another named "master".
+In the "master" branch, result.hdf5 is the best-performance weight corresponding to branchc51.json.
+
+
+You can run "trainmultinetwork.py" to start training. Before training, "train.xlsx" is needed, which 
+provids the labels of images used to train, "exponehot.npy" and "idonehot.npy" are 
+one-hot encoding for identity and expression in training set, respectively.
+
+You can run "validateid.py" to start validation of identity, and run "validateexp.py" to start validation 
+of expression. Here, the identity classification accuracy was evaluated using the same strategy as FaceNet 
